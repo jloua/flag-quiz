@@ -1,0 +1,167 @@
+@font-face {
+    font-family: Bebas;
+    src: url(assets/BebasNeue-Regular.ttf);
+    /* för rubriker */
+  }
+  
+  @font-face {
+    font-family: Josefin;
+    src: url(assets/Josefin_Sans/static/JosefinSans-Light.ttf);
+    /* för brödtext */
+  }
+  
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Josefin, sans-serif;
+    text-align: center;
+  }
+  
+  body {
+    background-color: #4f4cb0;
+    color: #e9eff9;
+    min-height: 100vh;
+  }
+  
+  footer {
+    text-align: center;
+    width: auto;
+    margin: 0; 
+  }
+  
+  h1 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    text-align: center;
+  }
+  
+  h1, h2, h3 {
+    font-family: Bebas, sans-serif;
+  }
+  
+  img {
+    padding: 2.5%;
+  }
+  
+  ul {
+    text-align: center;
+    padding: 0;
+  }
+  
+  .button-group {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .hide {
+    display: none;
+  }
+  
+  .choice-button {
+    margin-top: 0.5rem;
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+  }
+  
+  .length-button {
+    margin: 0.5rem;
+    background-color: #e4d09d;
+    border: none;
+  }
+  
+  .highscore-con {
+    background-color: rgba(255, 255, 255, 0.6);
+    color: black;
+    padding: 1rem;
+    border-radius: 1rem;
+  }
+  
+  .row {
+    justify-content: center;
+  }
+  
+  #nextBtn {
+    width: 6rem;
+    margin: 1.5rem;
+    padding: 0.5rem;
+  }
+  
+  #highscore {
+    padding: 0;
+  }
+  
+  #highscore li::marker {
+    font-family: Bebas, sans-serif;
+    font-size: x-large;
+    font-weight: bold;
+  }
+  
+  #playagain {
+    width: 8rem;
+    margin: 2rem;
+  }
+  
+  #swagcat {
+    padding-top: 1rem;
+  }
+  
+  #right-answer {
+    background-color: rgb(76, 109, 18);
+    color: white;
+  }
+  
+  #wrong-answer {
+    background-color: rgb(230, 89, 64);
+  }
+  
+  /* Media queries */
+  /* tablet */
+  @media screen and (min-width: 768px) {
+    h1 {
+      margin: 2rem;
+    }
+  
+    .button-group {
+      flex-direction: row;
+    }
+  
+    .length-button {
+      display: inline-flex;
+    }
+  
+    .choice-button {
+      width: 45%;
+      margin: 2.5%;
+    }
+  
+    #choices {
+      flex-direction: row;
+      flex-wrap: wrap;
+      height: max-content;
+      justify-content: space-between;
+      align-content: space-between;
+      border-radius: 0;
+    }
+  }
+  
+  @media screen and (min-width: 992px) {
+  
+    img {
+      height: 50%;
+      width: 50%;
+    }
+  
+    .choice-button {
+      width: 22%;
+      margin: 1.5%;
+    }
+  
+    #choices {
+      width: 90%;
+      margin: auto;
+    }
+  }
